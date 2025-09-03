@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vCard - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script>
+    (function(){
+      emailjs.init("_qBc-8r-rVEg6pxa8"); // Replace with your public key
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Abhay Kacha" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Abhay Kacha">Abhay Kacha</h1>
+
+          <p class="title">Mobile App Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:abhaykac@gmail.com" class="contact-link">abhaykac@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="2003-04-30">April 30, 2003</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Gujarat, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/YOUR_PROFILE" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I’m a Flutter Developer and Mobile App Designer from Gujarat, India, specializing in building high-performance, cross-platform applications.
+            I love transforming ideas into smooth, responsive, and visually engaging mobile experiences that work seamlessly on both Android and iOS.
+          </p>
+
+          <p>
+            With 3 years of hands-on experience in Flutter, I have developed applications ranging from business tools and billing systems to creative, user-focused apps. My focus is always on crafting apps that are functional, user-friendly, and aesthetically pleasing.
+          </p>
+
+          <p>
+            I pay attention to every detail — from app architecture and performance optimization to intuitive UI/UX design — ensuring your product not only works flawlessly but also feels delightful to use. My goal is to bring your vision to life with creativity, clean code, and a pixel-perfect design that reflects your brand identity.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm Doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Flutter App Development</h4>
+                <p class="service-item-text">
+                  High-quality, cross-platform mobile applications for Android and iOS using Flutter, with a focus on performance and smooth user experience.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="backend development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Laravel Backend Development</h4>
+                <p class="service-item-text">
+                  Backend APIs and admin panels built with Laravel, ensuring secure, scalable, and maintainable server-side solutions.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="UI/UX design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX Design</h4>
+                <p class="service-item-text">
+                  Modern, clean, and user-friendly app interfaces designed to enhance usability and create engaging user experiences.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-api-integration.png" alt="API integration icon" width="65">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">API Integration</h4>
+                <p class="service-item-text">
+                  Connecting apps to third-party services and APIs for seamless data flow and enhanced functionality.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - clients
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Worked with</h3>
+
+          <ul class="clients-list has-scrollbar" style="align-items: center">
+
+            <li class="clients-item" style="min-width: fit-content">
+              <a href="#">
+                <img src="./assets/images/kvart-logo.webp" alt="client logo"  height="108px">
+              </a>
+            </li>
+
+            <li class="clients-item" >
+              <a href="#">
+                <img src="./assets/images/supremeTodaylogo.jpeg" alt="client logo">
+              </a>
+            </li>
+
+            <li>
+              <a href="#">
+                <img src="./assets/images/movie_central.webp" alt="client logo" height="108px"   style="border-radius: 50%; object-fit: cover;">
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Infinity Infoway (Flutter Developer)</h4>
+              <span>2025 — Present</span>
+              <p class="timeline-text">
+                Working as a Flutter developer, building cross-platform mobile applications with
+                clean architecture and responsive UI. Responsible for integrating REST APIs,
+                improving app performance, and implementing new features to enhance user experience.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Techxperts (Flutter Developer)</h4>
+              <span>2022 — 2025</span>
+              <p class="timeline-text">
+                Worked primarily as a Flutter developer, creating and maintaining mobile applications.
+                During my time here, I also gained valuable exposure to web technologies and
+                Laravel framework, which strengthened my understanding of full-stack development.
+              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Master of Science (IT)</h4>
+
+              <span>2024 — 2025</span>
+
+              <p class="timeline-text">
+                Pursuing advanced studies in Information Technology with emphasis on research,
+                problem-solving, and practical implementation through academic projects and case studies.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachalor of Science (IT)</h4>
+
+              <span>2023 — 2020</span>
+
+              <p class="timeline-text">
+                Completed undergraduate degree in IT covering programming, database management, web development,
+                and networking fundamentals. Built a strong foundation in computer science concepts through academic
+                projects, internships, and hands-on technical experience.
+
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skills" style="margin: 20px 0;">
+
+          <h3 class="h3 skills-title" style="font-size: 20px; margin-bottom: 15px; color: #fff;">Skills</h3>
+
+          <div style="display: flex; flex-wrap: wrap; gap: 15px;">
+
+            <div style="background: #1e1e1e; border-radius: 12px; padding: 20px; text-align: center; flex: 1 1 140px; min-width: 140px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+              <i class="fa-brands fa-flutter" style="font-size: 28px; color: var(--vegas-gold); margin-bottom: 10px;"></i>
+              <h4 style="font-size: 14px; font-weight: 500; color: #fff; margin: 0;">Flutter Development</h4>
+            </div>
+
+            <div style="background: #1e1e1e; border-radius: 12px; padding: 20px; text-align: center; flex: 1 1 140px; min-width: 140px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+              <i class="fa-brands fa-android" style="font-size: 28px; color: var(--vegas-gold); margin-bottom: 10px;"></i>
+              <h4 style="font-size: 14px; font-weight: 500; color: #fff; margin: 0;">Android Apps</h4>
+            </div>
+
+            <div style="background: #1e1e1e; border-radius: 12px; padding: 20px; text-align: center; flex: 1 1 140px; min-width: 140px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+              <i class="fa-brands fa-apple" style="font-size: 28px; color: var(--vegas-gold); margin-bottom: 10px;"></i>
+              <h4 style="font-size: 14px; font-weight: 500; color: #fff; margin: 0;">iOS Apps</h4>
+            </div>
+
+            <div style="background: #1e1e1e; border-radius: 12px; padding: 20px; text-align: center; flex: 1 1 140px; min-width: 140px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+              <i class="fa-solid fa-database" style="font-size: 28px; color: var(--vegas-gold); margin-bottom: 10px;"></i>
+              <h4 style="font-size: 14px; font-weight: 500; color: #fff; margin: 0;">Firebase / MySQL</h4>
+            </div>
+
+            <div style="background: #1e1e1e; border-radius: 12px; padding: 20px; text-align: center; flex: 1 1 140px; min-width: 140px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+              <i class="fa-solid fa-code" style="font-size: 28px; color: var(--vegas-gold); margin-bottom: 10px;"></i>
+              <h4 style="font-size: 14px; font-weight: 500; color: #fff; margin: 0;">REST APIs</h4>
+            </div>
+
+            <div style="background: #1e1e1e; border-radius: 12px; padding: 20px; text-align: center; flex: 1 1 140px; min-width: 140px; box-shadow: 0 2px 8px rgba(0,0,0,0.4);">
+              <i class="fa-brands fa-git-alt" style="font-size: 28px; color: var(--vegas-gold); margin-bottom: 10px;"></i>
+              <h4 style="font-size: 14px; font-weight: 500; color: #fff; margin: 0;">Git & GitHub</h4>
+            </div>
+
+          </div>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio" style="padding:20px;">
+
+        <header>
+          <h2 class="h2 article-title" style="font-size:28px; margin-bottom:20px;">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <!-- Filter Buttons -->
+          <ul class="filter-list" style="display:flex; gap:10px; list-style:none; padding:0; margin-bottom:20px;">
+            <li class="filter-item"><button class="active" data-filter-btn style="padding:6px 12px; border:1px solid #ddd; border-radius:6px; cursor:pointer;">All</button></li>
+          </ul>
+
+          <!-- Dropdown Filter -->
+          <div class="filter-select-box" style="margin-bottom:20px;">
+            <button class="filter-select" data-select style="padding:8px 12px; border:1px solid #ccc; border-radius:6px; cursor:pointer; display:flex; justify-content:space-between; width:200px;">
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">▼</div>
+            </button>
+
+            <ul class="select-list" style="list-style:none; padding:0; margin-top:10px; display:none;">
+              <li class="select-item"><button data-select-item>All</button></li>
+            </ul>
+          </div>
+
+          <!-- Project List -->
+          <ul class="project-list" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; list-style:none; padding:0;">
+
+            <!-- Techxperts Projects -->
+            <li class="project-item active" data-filter-item data-category="Techxperts" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img" style="margin:0 0 10px 0;">
+                  <div class="project-item-icon-box" style="position:absolute; background:#000; color:#fff; padding:3px 6px; border-radius:4px;">👁</div>
+                  <img src="./assets/images/techxperts1.png" alt="Techxperts Project 1" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title" style="margin:5px 0;">Employee Management System</h3>
+                <p class="project-category" style="margin:0;">Web + Flutter (Laravel + API)</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Worked at Techxperts</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Techxperts" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img" style="margin:0 0 10px 0;">
+                  <img src="./assets/images/techxperts2.png" alt="Techxperts Project 2" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">E-Learning Platform</h3>
+                <p class="project-category">Flutter App + Web Dashboard</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Worked at Techxperts</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Techxperts" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/techxperts3.png" alt="Techxperts Project 3" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">Task Tracking Tool</h3>
+                <p class="project-category">Mobile Productivity App</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Worked at Techxperts</p>
+              </a>
+            </li>
+
+            <!-- Infinity Infoway Projects -->
+            <li class="project-item active" data-filter-item data-category="Infinity Infoway" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/infinity1.png" alt="Infinity Project 1" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">Travel Booking App</h3>
+                <p class="project-category">Flutter + Firebase</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Worked at Infinity Infoway</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Infinity Infoway" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/infinity2.png" alt="Infinity Project 2" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">Restaurant Billing System</h3>
+                <p class="project-category">Flutter + SQFlite</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Worked at Infinity Infoway</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Infinity Infoway" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/infinity3.png" alt="Infinity Project 3" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">E-Commerce Mobile App</h3>
+                <p class="project-category">Flutter + REST API</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Worked at Infinity Infoway</p>
+              </a>
+            </li>
+
+            <!-- Freelancing Projects -->
+            <li class="project-item active" data-filter-item data-category="Freelancing" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/freelance1.png" alt="Freelance Project 1" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">Custom Portfolio Website</h3>
+                <p class="project-category">HTML, CSS, JS</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Freelancing Project</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Freelancing" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/freelance2.png" alt="Freelance Project 2" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">Local Shop Billing App</h3>
+                <p class="project-category">Flutter + SQLite</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Freelancing Project</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="Freelancing" style="border:1px solid #ddd; border-radius:10px; padding:15px;">
+              <a href="#">
+                <figure class="project-img">
+                  <img src="./assets/images/freelance3.png" alt="Freelance Project 3" loading="lazy" style="width:100%; border-radius:8px;">
+                </figure>
+                <h3 class="project-title">Personal Blog Website</h3>
+                <p class="project-category">WordPress / PHP</p>
+                <p style="font-size:12px; color:gray; margin-top:4px;">Freelancing Project</p>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+      </article>
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672143.6372407285!2d68.17664579999999!3d22.258652299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f05.1!3m3!1m2!1s0x3959cb185d2d8c87%3A0x5f51a59f8c56b3a4!2sGujarat%2C%20India!5e0!3m2!1sen!2sin!4v1693245678901!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+
+        <form id="contact-form" style="max-width:720px;margin:20px auto;padding:20px;background:#141416;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6);color:#e9e9e9;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+          <h3 style="margin:0 0 12px;font-size:20px;color:#ffd369;">Contact Me</h3>
+          <p style="margin:0 0 18px;color:#bdbdbd;font-size:14px;">Send a quick message — I'll get back to you soon.</p>
+
+          <!-- Subject -->
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+            <label for="subject" style="font-size:13px;color:#cfcfcf;">Subject</label>
+            <input
+                    id="subject"
+                    name="subject"
+                    type="text"
+                    placeholder="Brief subject (e.g., Project inquiry)"
+                    required
+                    aria-required="true"
+                    style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:#1b1b1d;color:#fff;font-size:14px;outline:none;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);"
+                    onfocus="this.style.borderColor='#ffd369';this.style.boxShadow='0 0 0 4px rgba(255,204,105,0.06)';"
+                    onblur="this.style.borderColor='rgba(255,255,255,0.06)';this.style.boxShadow='none';"
+            />
+          </div>
+
+          <!-- Message -->
+          <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px;">
+            <label for="message" style="font-size:13px;color:#cfcfcf;">Message</label>
+            <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Write your message here..."
+                    rows="6"
+                    style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:#1b1b1d;color:#fff;font-size:14px;resize:vertical;min-height:120px;outline:none;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);"
+                    onfocus="this.style.borderColor='#ffd369';this.style.boxShadow='0 0 0 4px rgba(255,204,105,0.06)';"
+                    onblur="this.style.borderColor='rgba(255,255,255,0.06)';this.style.boxShadow='none';"
+            ></textarea>
+          </div>
+
+          <!-- Actions -->
+          <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+            <button
+                    type="submit"
+                    style="display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:10px;border:none;background:linear-gradient(90deg,#ffd369,#ffb347);color:#111;font-weight:600;cursor:pointer;font-size:14px;box-shadow:0 6px 18px rgba(255,180,60,0.12);transition:transform .12s ease;"
+                    onmouseover="this.style.transform='translateY(-2px)';"
+                    onmouseout="this.style.transform='translateY(0)';"
+                    onfocus="this.style.outline='none';"
+            >
+              <!-- small paper-plane svg icon inline -->
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display:block;">
+                <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="#111"></path>
+              </svg>
+              Send Message
+            </button>
+
+            <div style="font-size:13px;color:#9b9b9b;">
+              Or email directly at
+              <a href="mailto:abhaykac@gmail.com" style="color:#ffd369;text-decoration:none;margin-left:6px;">abhaykac@gmail.com</a>
+            </div>
+          </div>
+
+          <!-- small success / error area -->
+          <div id="form-status" role="status" aria-live="polite" style="margin-top:12px;font-size:13px;color:#a0a0a0;"></div>
+        </form>
+
+        <script>
+          document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            emailjs.send("service_vncdt9r", "template_9jsyl0k", {
+              subject: document.getElementById("subject").value,
+              message: document.getElementById("message").value,
+            })
+                    .then(function(response) {
+                      alert("✅ Message sent successfully!");
+                    }, function(error) {
+                      alert("❌ Failed to send message: " + JSON.stringify(error));
+                    });
+          });
+        </script>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
