@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Privacy Policy – Anuvaad</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark">
+    <style>
+        :root {
+            --bg: #0b0c10;
+            --card: #12141a;
+            --text: #e6e6e6;
+            --muted: #a7aab0;
+            --brand: #4da3ff;
+            --ok: #3ddc97;
+            --warn: #ffc857;
+            --danger: #ff6b6b;
+            --link: #8ab4f8;
+        }
+        @media (prefers-color-scheme: light) {
+            :root {
+                --bg: #ffffff;
+                --card: #ffffff;
+                --text: #222222;
+                --muted: #5b5e63;
+                --brand: #1a73e8;
+                --ok: #0f9d58;
+                --warn: #fbbc05;
+                --danger: #d93025;
+                --link: #1a73e8;
+            }
+        }
+        html, body {
+            margin: 0; padding: 0; background: var(--bg); color: var(--text);
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+            line-height: 1.6;
+        }
+        .wrap { max-width: 900px; margin: 0 auto; padding: 24px; }
+        header { padding: 18px 0 8px; }
+        h1 { font-size: 2rem; margin: 0 0 6px; }
+        .subtitle { color: var(--muted); margin-bottom: 22px; }
+        section { background: var(--card); border-radius: 14px; padding: 20px; margin: 14px 0; box-shadow: 0 1px 2px rgb(0 0 0 / 6%); }
+        h2 { margin: 0 0 12px; font-size: 1.25rem; }
+        p, li { font-size: 0.98rem; }
+        a { color: var(--link); text-decoration: underline; }
+        .kicker { display: inline-block; font-size: 0.85rem; padding: 2px 8px; border-radius: 999px; background: rgba(77,163,255,.12); color: var(--brand); margin-bottom: 12px; }
+        .list { padding-left: 18px; }
+        .note { font-size: .9rem; color: var(--muted); }
+        footer { color: var(--muted); font-size: .9rem; padding: 16px 0 40px; }
+        code { background: rgba(127,127,127,.15); padding: 2px 6px; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace; }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <span class="kicker">Privacy Policy</span>
+        <h1>Anuvaad</h1>
+        <div class="subtitle">Effective date: <strong>September 5, 2025</strong></div>
+    </header>
+
+    <section>
+        <p>Anuvaad (“we”, “our”, or “us”) is a mobile application that helps users translate text between languages. We are committed to protecting your privacy. This Policy explains what information we collect, how we use it, and your choices.</p>
+    </section>
+
+    <section>
+        <h2>What we collect</h2>
+        <ul class="list">
+            <li><strong>Translation input text</strong>: the text you enter for translation and the selected source/target languages. This is sent to the translation service solely to return a translation.</li>
+            <li><strong>Local translation history (on your device)</strong>: if you use the “Translate” action, the input and translated text, languages, and timestamp are stored <em>locally on your device</em> to show in the History screen. We do not receive this history on our servers.</li>
+            <li><strong>Advertising data (via Google AdMob)</strong>: our app displays ads using Google AdMob, which may collect device identifiers and usage data to provide and measure ads. See the “Advertising” section below.</li>
+        </ul>
+        <p>We do <strong>not</strong> create user accounts and we do <strong>not</strong> operate our own backend servers for storing your personal data.</p>
+    </section>
+
+    <section>
+        <h2>How translation works</h2>
+        <p>To provide translations, the app calls Google’s translation service endpoint:</p>
+        <p><code>https://translate.googleapis.com/translate_a/single</code></p>
+        <p>When you request a translation, your input text and language selections are transmitted to this service to obtain the translation. We do not store or process this content on our servers. Google may process this data in accordance with its own policies. See <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a>.</p>
+    </section>
+
+    <section>
+        <h2>How we use information</h2>
+        <ul class="list">
+            <li>Provide translations and app functionality.</li>
+            <li>Maintain an optional on-device history so you can revisit translations.</li>
+            <li>Display ads and measure ad performance via Google AdMob.</li>
+            <li>Improve reliability and user experience (e.g., crash logs or basic analytics that may be provided by platform services).</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Where your data lives & retention</h2>
+        <ul class="list">
+            <li><strong>Translation history</strong> is stored locally on your device (using app storage). It is not synced to us. You can remove it by uninstalling the app or clearing the app’s data in system settings. If we add an in-app “Clear History” option, it will remove the locally saved items.</li>
+            <li><strong>Translation requests</strong> are transmitted to Google only for the time needed to return a result.</li>
+            <li><strong>Ad data</strong> is handled by Google AdMob per their retention and privacy practices.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Sharing of information</h2>
+        <ul class="list">
+            <li><strong>Service providers</strong>: Your text is shared with Google’s translation service solely to perform the translation.</li>
+            <li><strong>Advertising partners</strong>: Google AdMob may collect and process data to serve personalized or non-personalized ads. See <a href="https://policies.google.com/technologies/ads" rel="noopener" target="_blank">Google’s Advertising Policies</a>.</li>
+            <li>We do <strong>not</strong> sell your personal information.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Advertising (Google AdMob)</h2>
+        <p>We use Google AdMob to show ads. AdMob and its partners may collect identifiers (e.g., Advertising ID), IP address, and app interaction data to provide, personalize (where permitted), and measure ads. You can learn more and manage choices via:</p>
+        <ul class="list">
+            <li><a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a></li>
+            <li><a href="https://adssettings.google.com" rel="noopener" target="_blank">Google Ads Settings</a></li>
+        </ul>
+        <p class="note">Depending on your region, the app or Google may present a consent dialog for personalized ads and data processing. Your preferences can be changed later in device settings or Ad Settings where available.</p>
+    </section>
+
+    <section>
+        <h2>Permissions</h2>
+        <p>The app requires Internet access to request translations and load ads. We do not request access to contacts, location, microphone, camera, or files for translation.</p>
+    </section>
+
+    <section>
+        <h2>Security</h2>
+        <p>We use the platform’s standard security features and rely on trusted providers (Google) for network services. No method of transmission or storage is 100% secure, but we strive to protect your information.</p>
+    </section>
+
+    <section>
+        <h2>Your rights & choices</h2>
+        <ul class="list">
+            <li><strong>Access/Deletion (on device)</strong>: You can remove your local translation history by clearing app data or uninstalling the app.</li>
+            <li><strong>GDPR/CCPA</strong>: Depending on your jurisdiction, you may have rights to access, correct, delete, or restrict processing of your personal data. For AdMob data, see Google’s links above. For app-specific questions, contact us using the details below.</li>
+            <li><strong>Ad preferences</strong>: Manage personalized ads via your device’s “Ads” settings or <a href="https://adssettings.google.com" target="_blank" rel="noopener">Google Ads Settings</a>.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Children’s privacy</h2>
+        <p>Our app is not directed to children under 13 (or the minimum age in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has provided information, contact us and we will take appropriate steps.</p>
+    </section>
+
+    <section>
+        <h2>International transfers</h2>
+        <p>Translation and advertising services may process data on servers located outside your country. By using the app, you understand this may involve international data transfers handled by our providers (e.g., Google) under their policies.</p>
+    </section>
+
+    <section>
+        <h2>Changes to this policy</h2>
+        <p>We may update this Policy from time to time. We will post the new Policy on this page with an updated “Effective date.” Your continued use of the app after changes means you accept the updated Policy.</p>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, please contact:</p>
+        <p>Email: <a href="mailto:sparkstechnology1@gmail.com">sparkstechnology1@gmail.com</a></p>
+    </section>
+</div>
+</body>
+</html>
