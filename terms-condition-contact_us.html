@@ -1,0 +1,85 @@
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+<script>
+  (function(){
+    emailjs.init("_qBc-8r-rVEg6pxa8"); // Replace with your public key
+  })();
+</script>
+
+<form id="contact-form" style="max-width:720px;margin:20px auto;padding:20px;background:#141416;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,0.6);color:#e9e9e9;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;">
+  <h3 style="margin:0 0 12px;font-size:20px;color:#ffd369;">Contact Me</h3>
+  <p style="margin:0 0 18px;color:#bdbdbd;font-size:14px;">Send a quick message — I'll get back to you soon.</p>
+
+  <!-- Subject -->
+  <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:14px;">
+    <label for="subject" style="font-size:13px;color:#cfcfcf;">Subject</label>
+    <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="Brief subject (e.g., Project inquiry)"
+            required
+            aria-required="true"
+            style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:#1b1b1d;color:#fff;font-size:14px;outline:none;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);"
+            onfocus="this.style.borderColor='#ffd369';this.style.boxShadow='0 0 0 4px rgba(255,204,105,0.06)';"
+            onblur="this.style.borderColor='rgba(255,255,255,0.06)';this.style.boxShadow='none';"
+    />
+  </div>
+
+  <!-- Message -->
+  <div style="display:flex;flex-direction:column;gap:8px;margin-bottom:18px;">
+    <label for="message" style="font-size:13px;color:#cfcfcf;">Message</label>
+    <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here..."
+            rows="6"
+            style="width:100%;padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:#1b1b1d;color:#fff;font-size:14px;resize:vertical;min-height:120px;outline:none;box-shadow:inset 0 1px 0 rgba(255,255,255,0.02);"
+            onfocus="this.style.borderColor='#ffd369';this.style.boxShadow='0 0 0 4px rgba(255,204,105,0.06)';"
+            onblur="this.style.borderColor='rgba(255,255,255,0.06)';this.style.boxShadow='none';"
+    ></textarea>
+  </div>
+
+  <!-- Actions -->
+  <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+    <button
+            type="submit"
+            style="display:inline-flex;align-items:center;gap:10px;padding:10px 18px;border-radius:10px;border:none;background:linear-gradient(90deg,#ffd369,#ffb347);color:#111;font-weight:600;cursor:pointer;font-size:14px;box-shadow:0 6px 18px rgba(255,180,60,0.12);transition:transform .12s ease;"
+            onmouseover="this.style.transform='translateY(-2px)';"
+            onmouseout="this.style.transform='translateY(0)';"
+            onfocus="this.style.outline='none';"
+    >
+      <!-- small paper-plane svg icon inline -->
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display:block;">
+        <path d="M2 21l21-9L2 3v7l15 2-15 2v7z" fill="#111"></path>
+      </svg>
+      Send Message
+    </button>
+
+    <div style="font-size:13px;color:#9b9b9b;">
+      Or email directly at
+      <a href="mailto:vyomixtechnologies@gmail.com" style="color:#ffd369;text-decoration:none;margin-left:6px;">vyomixtechnologies@gmail.com</a>
+
+    </div>
+  </div>
+
+  <!-- small success / error area -->
+  <div id="form-status" role="status" aria-live="polite" style="margin-top:12px;font-size:13px;color:#a0a0a0;"></div>
+</form>
+
+
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    emailjs.send("service_vncdt9r", "template_9jsyl0k", {
+      subject: document.getElementById("subject").value,
+      message: document.getElementById("message").value,
+    })
+            .then(function(response) {
+              alert("✅ Message sent successfully!");
+            }, function(error) {
+              alert("❌ Failed to send message: " + JSON.stringify(error));
+            });
+  });
+</script>
